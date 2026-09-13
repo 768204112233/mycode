@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人名片</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f4f5f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .business-card {
+            width: 360px;
+            height: 210px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            padding: 28px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+        .business-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 6px;
+            height: 100%;
+            background-color: #2563eb;
+        }
+        .card-left h2 {
+            font-size: 24px;
+            color: #1f2937;
+            margin-bottom: 6px;
+        }
+        .card-left p.job {
+            font-size: 14px;
+            color: #4b5563;
+            margin-bottom: 16px;
+        }
+        .card-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: right;
+        }
+        .card-right p {
+            font-size: 13px;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <div class="card-left">
+            <h2>张三</h2>
+            <p class="job">产品工程师</p>
+        </div>
+        <div class="card-right">
+            <p>电话：138-0000-0000</p>
+            <p>邮箱：zhangsan@email.com</p>
+            <p>地址：四川省成都市</p>
+        </div>
+    </div>
+</body>
+</html>
